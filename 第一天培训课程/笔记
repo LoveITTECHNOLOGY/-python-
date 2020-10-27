@@ -1,0 +1,19 @@
+引用类的写法：
+1.from module_name import *
+	从某个模块中导入指定的变量或方法到当前文件(*是全部)
+如果module_name中有变量 one = 1 ,当前文件中就存在one变量
+    这种方式导入的话变量和方法可以直接用
+    fun()
+    print(attr)
+    相当于把代码复制过来了
+2.import module_name
+    导入module_name模块，但是变量和方法要通过变量名去使用
+  或者  import module_name as m
+ module_name.fun()
+ module_name.attr 
+ m.fun()
+ m.attr
+ ----------
+ 海龟类:turtle
+ 模拟海龟在沙滩上行走的路径，形成图案
+ 
