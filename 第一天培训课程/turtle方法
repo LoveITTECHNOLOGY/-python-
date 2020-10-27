@@ -1,0 +1,110 @@
+一、画布：
+1.screensize(canvwidth,canvheight,bg)
+	参数分别为画布的宽、高、背景颜色
+	screensize(800,600,"green")
+	screensize()  #返回默认大小(400,300)
+
+2.turtle.setup(width=0.5,height=0.75,startx=None,start=None)
+	参数宽和高为整数时，表示像素
+	为小数时，表示占据电脑屏幕的比例
+	(startX,startY):这一坐标表示矩形窗口左上角顶点的位置，如果为空，则窗口位于屏幕中心
+二、画笔：
+1.pensize()  画笔的粗细
+
+2.pencolor() 可以是颜色的字符串"green" "red"
+	     也可以是RGB3元组
+
+3.turtle.speed(speed) 画笔移动的速度
+  范围为1-10   大于10小于1则为0
+  最快和0  直接成图
+
+4.shape('turtle') 设置画笔的形状
+  “arrow”箭头 “turtle”海龟 “circle”圆 “square”方块 “triangle”三角形 “classic”普通的（箭头）
+
+5.shapesize(width,height,outline) 设置画笔的大小 shapesize(5,5,5)
+
+6.hideturtle() 隐藏画笔
+
+7.showturtle() 显示画笔
+
+三、画笔运动命令:
+1.turtle.forward(distance) 向当前画笔方向移动distance像素
+
+2.turtle.backward(distance) 向当前画笔反方向移动distance像素
+
+3.turtel.right(degree) 顺时针移动degree度
+
+4.turtle.left(degree) 逆时针移动degree度
+
+5.turtle.pendown()  放下画笔
+
+6.turtle.up() 提起笔移动，不绘制图形，用于另起一个地方绘制
+
+7.turtle.goto(x,y) 将画笔移动到坐标为x,y的位置
+
+8.turtle.circle(radius,extent) 
+	radius 半径为正负，表示圆心在画笔的左边（右边）画圆
+	extent(弧度)
+9.setx() 将当前x轴移动到指定位置
+
+10.sety() 将当前y轴移动到指定位置
+
+11.setheading(angle) 设置当前朝向为angle角度
+
+12.home()  设置当前画笔位置为原点，朝向东
+
+13.dot(r) 绘制一个指定直径和颜色的圆点
+
+四、全局控制命令
+
+1.turtle.clear()   删除图纸，对属性不做更改  海龟还在原地
+
+2.turtle.reset()   重置，并清除所有属性     海龟回到原点
+
+3.turtle.undo()    撤销最后的操作
+
+4.turtle.isvisible()   乌龟是否可见
+
+5.stamp()      将箭头画在画布上    
+
+6.write(arg,font=["宋体",30,bold],align="center",move=)
+
+write():写文本。参数：arg-要写入的对象。move-是否移动。align-对齐方式：left，right，center。font-字体。fontname，fontsize，fonttype。
+
+
+五、画笔控制命令
+1.turtle.fillcolor()    设置图形的填充颜色
+
+2.turtle.color(pencolor,fillcolor)  同时设置画笔颜色和填充颜色
+
+3.turtle.fill()   返回当前的填充状态 
+                     
+4.turtle.begin_fill()   准备开始填充(填充的起点)
+
+5.turtle.end_fill()     结束填充(填充的终点)
+
+6.turtle.hideturtle()   隐藏画笔的形状
+
+7.turtle.showturtle()   显示画笔的形状
+
+
+
+六、其他命令
+
+1.turtle.delay() 设置或返回以毫秒为单位的绘图延迟
+
+2.turtle.begin_poly()
+
+3.turtle.end_poly()
+
+4.turtle.get_poly()
+
+5.turtle.mainloop()或turtle.done() 启动事件循环-调用Tkiner的mainloop函数
+	必须是乌龟图形程序中的最后一个语句，使图案画完了不会直接关闭窗口
+
+6.turtle.mode() 设置乌龟模式并重置，如果没有给出模式，则返回当前模式
+	standard 向右（东） 逆时针
+	logo向上（北） 顺时针
+
+
+
