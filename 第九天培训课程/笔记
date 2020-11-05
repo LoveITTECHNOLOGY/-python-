@@ -1,0 +1,33 @@
+类的属性和方法：
+
+类的属性:
+	__private_attr:两个下划线开头，声明为私有属性，
+	不能在类的外部被访问，在类的内部使用self.__private_attr
+	_protected_attr:单下划线开头，受保护的属性，
+	只能在本类和子类中访问
+	public_attr:普通属性(公开属性)
+类的方法:
+	在类的内部，使用def关键字定义的函数，必须包括一个self参数
+	私有的、公开的、受保护的和属性一致
+类的静态方法:
+	直接通过类名访问，不用放self作为参数
+	@staticmethod
+	def static_method():
+		...
+	不依赖任何类和对象，一般用来写工具类
+	Class Tools:
+		@staticmethod
+		def countChar():
+			...	
+	Tools.countChar(...)	
+类的方法:
+	通过类名访问，但是要放默认参数cls，代指当前的类
+	@classmethod
+	def class_method():
+		...
+----------------------------------
+类的继承：   class className(parentClassName):
+class Test:    class Test(object):    class Test():
+三种写法是一样的，都是默认继承object
+Python是多继承的
+	
