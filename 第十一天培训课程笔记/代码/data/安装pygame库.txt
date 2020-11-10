@@ -1,0 +1,13 @@
+方法一：
+0.文件拷到D盘中
+1.cmd   
+2.D:
+3.python -m pip install --user pygame-1.9.6-cp37-cp37m-win_amd64
+
+方法二：
+直接
+python -m pip install pygame --user
+
+
+检查是否安装成功：
+python -m pygame.examples.aliens
