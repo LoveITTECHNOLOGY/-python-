@@ -1,0 +1,8 @@
+python连接oracle数据库
+1.下载cx_Oracle-8.0.1-cp37-cp37m-win_amd64.whl
+2.安装pip install wheel
+3.进入文件所在处
+4.pip.exe install cx_Oracle-8.0.1-cp37-cp37m-win_amd64.whl
+或者 pip install cx_Oracle
+5.解压Oracle微端 instantclient_19_8.zip 到某处
+   配置微端的环境变量
