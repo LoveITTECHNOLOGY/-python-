@@ -1,0 +1,42 @@
+urllib库:
+1.网页请求
+2.响应的获取
+3.代理和cookie设置
+4.异常处理
+5.URL解析
+---------------------
+1.urlparse() 把url解析成6个部分
+scheme 协议
+netloc 域名
+path 路径
+params 参数
+query 查询
+fragment 用来判断
+
+2.urljoin(baseurl,newurl)
+将url根域名和新的url组合成新的url地址
+
+3.urlopen(url,data,timeout)
+打开一个url的方法，返回一个文件对象，可以对他进行文件的相关操作
+data = urllib.request.urlopen(url)
+data 是一个response对象
+data.read() 取出网页源码 是二进制形式，decode()转为utf-8
+
+4.urlretrieve(url,filename,reporthook,data)
+可以去url页面下载文件
+
+5.urlencode() 将字典中的键值对以&连接
+用来传参数   dic = {'name':'tyy','psw':'123'}
+http://www.baidu.com?name=tyy&psw=123
+
+6.get请求
+与普通访问页面的方法一样，参数拼接在地址栏上
+
+7.post请求
+request = urllib.request.Request(url,data)
+
+urllib.request.urlopen(url)
+除了放url作为参数，还可以放一个Request
+urllib.request.urlopen(Request)
+
+
